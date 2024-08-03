@@ -1,0 +1,40 @@
+2024-59-03 15:59:42-root-DEBUG-this is debug message
+2024-59-03 15:59:42-root-INFO-this is info message
+2024-59-03 15:59:42-root-WARNING-this is warning message
+2024-59-03 15:59:42-root-CRITICAL-this is critical message
+2024-59-03 15:59:42-root-ERROR-this is error message
+2024-00-03 16:00:14-parso.python.diff-DEBUG-diff parser start
+2024-00-03 16:00:14-parso.python.diff-DEBUG-line_lengths old: 1; new: 1
+2024-00-03 16:00:14-parso.python.diff-DEBUG--> code[replace] old[1:1] new[1:1]
+2024-00-03 16:00:14-parso.python.diff-DEBUG-parse_part from 1 to 1 (to 0 in part parser)
+2024-00-03 16:00:14-parso.python.diff-DEBUG-diff parser end
+2024-00-03 16:00:16-parso.python.diff-DEBUG-diff parser start
+2024-00-03 16:00:16-parso.python.diff-DEBUG-line_lengths old: 1; new: 1
+2024-00-03 16:00:16-parso.python.diff-DEBUG--> code[replace] old[1:1] new[1:1]
+2024-00-03 16:00:16-parso.python.diff-DEBUG-parse_part from 1 to 1 (to 0 in part parser)
+2024-00-03 16:00:16-parso.python.diff-DEBUG-diff parser end
+2024-00-03 16:00:16-parso.python.diff-DEBUG-diff parser start
+2024-00-03 16:00:16-parso.python.diff-DEBUG-line_lengths old: 1; new: 1
+2024-00-03 16:00:16-parso.python.diff-DEBUG--> code[replace] old[1:1] new[1:1]
+2024-00-03 16:00:16-parso.python.diff-DEBUG-parse_part from 1 to 1 (to 0 in part parser)
+2024-00-03 16:00:16-parso.python.diff-DEBUG-diff parser end
+2024-00-03 16:00:17-parso.python.diff-DEBUG-diff parser start
+2024-00-03 16:00:17-parso.python.diff-DEBUG-line_lengths old: 1; new: 1
+2024-00-03 16:00:17-parso.python.diff-DEBUG--> code[replace] old[1:1] new[1:1]
+2024-00-03 16:00:17-parso.python.diff-DEBUG-parse_part from 1 to 1 (to 0 in part parser)
+2024-00-03 16:00:17-parso.python.diff-DEBUG-diff parser end
+2024-00-03 16:00:17-parso.python.diff-DEBUG-diff parser start
+2024-00-03 16:00:17-parso.python.diff-DEBUG-line_lengths old: 1; new: 1
+2024-00-03 16:00:17-parso.python.diff-DEBUG--> code[replace] old[1:1] new[1:1]
+2024-00-03 16:00:17-parso.python.diff-DEBUG-parse_part from 1 to 1 (to 0 in part parser)
+2024-00-03 16:00:17-parso.python.diff-DEBUG-diff parser end
+2024-00-03 16:00:44-parso.python.diff-DEBUG-diff parser start
+2024-00-03 16:00:44-parso.python.diff-DEBUG-line_lengths old: 1; new: 1
+2024-00-03 16:00:44-parso.python.diff-DEBUG--> code[replace] old[1:1] new[1:1]
+2024-00-03 16:00:44-parso.python.diff-DEBUG-parse_part from 1 to 1 (to 0 in part parser)
+2024-00-03 16:00:44-parso.python.diff-DEBUG-diff parser end
+2024-00-03 16:00:46-parso.python.diff-DEBUG-diff parser start
+2024-00-03 16:00:46-parso.python.diff-DEBUG-line_lengths old: 1; new: 1
+2024-00-03 16:00:46-parso.python.diff-DEBUG--> code[replace] old[1:1] new[1:1]
+2024-00-03 16:00:46-parso.python.diff-DEBUG-parse_part from 1 to 1 (to 0 in part parser)
+2024-00-03 16:00:46-parso.python.diff-DEBUG-diff parser end

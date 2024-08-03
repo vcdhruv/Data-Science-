@@ -1,0 +1,21 @@
+2024-08-03 15:12:58,124 element : 1 is selected , integer list : [] , string list : []
+2024-08-03 15:12:58,124 selected element is integer..
+2024-08-03 15:12:58,124 element : 2 is selected , integer list : [1] , string list : []
+2024-08-03 15:12:58,124 selected element is integer..
+2024-08-03 15:12:58,124 element : 3 is selected , integer list : [1, 2] , string list : []
+2024-08-03 15:12:58,124 selected element is integer..
+2024-08-03 15:12:58,124 element : 4 is selected , integer list : [1, 2, 3] , string list : []
+2024-08-03 15:12:58,125 selected element is integer..
+2024-08-03 15:12:58,125 element : 5 is selected , integer list : [1, 2, 3, 4] , string list : []
+2024-08-03 15:12:58,125 selected element is integer..
+2024-08-03 15:12:58,125 element : [1, 2, 3] is selected , integer list : [1, 2, 3, 4, 5] , string list : []
+2024-08-03 15:12:58,125 selected element is list..
+2024-08-03 15:12:58,125 In list element : 1
+2024-08-03 15:12:58,125 In list element : 2
+2024-08-03 15:12:58,125 In list element : 3
+2024-08-03 15:12:58,125 element : vishmay is selected , integer list : [1, 2, 3, 4, 5, 1, 2, 3] , string list : []
+2024-08-03 15:12:58,125 selected element is string..
+2024-08-03 15:12:58,126 element : dhruv is selected , integer list : [1, 2, 3, 4, 5, 1, 2, 3] , string list : ['vishmay']
+2024-08-03 15:12:58,126 selected element is string..
+2024-08-03 15:13:00,866 Final Integer List is [1, 2, 3, 4, 5, 1, 2, 3]
+2024-08-03 15:13:00,866 Final Str List is ['vishmay', 'dhruv']

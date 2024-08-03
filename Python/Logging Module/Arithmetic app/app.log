@@ -1,0 +1,5 @@
+2024-53-03 15:53:51-module1-DEBUG-adding 5 + 4 = 9
+2024-53-03 15:53:51-module1-DEBUG-subtracting 5 - 4 = 1
+2024-53-03 15:53:51-module1-DEBUG-multiplying 5 * 4 = 20
+2024-53-03 15:53:51-module1-DEBUG-dividing 8 / 4 = 2.0
+2024-53-03 15:53:51-module1-ERROR-divide by zero error
