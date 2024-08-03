@@ -1,0 +1,197 @@
+ 2023-06-09 16:50:29,205 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:50:29,206 parso.python.diff DEBUG line_lengths old: 1; new: 1
+ 2023-06-09 16:50:29,206 parso.python.diff DEBUG -> code[replace] old[1:1] new[1:1]
+ 2023-06-09 16:50:29,207 parso.python.diff DEBUG parse_part from 1 to 1 (to 0 in part parser)
+ 2023-06-09 16:50:29,207 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:50:33,217 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:50:33,217 parso.python.diff DEBUG line_lengths old: 1; new: 1
+ 2023-06-09 16:50:33,217 parso.python.diff DEBUG -> code[replace] old[1:1] new[1:1]
+ 2023-06-09 16:50:33,217 parso.python.diff DEBUG parse_part from 1 to 1 (to 0 in part parser)
+ 2023-06-09 16:50:33,218 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:50:45,025 root INFO start of sorting an list
+ 2023-06-09 16:51:14,843 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:51:14,843 parso.python.diff DEBUG line_lengths old: 1; new: 3
+ 2023-06-09 16:51:14,843 parso.python.diff DEBUG -> code[replace] old[1:1] new[1:3]
+ 2023-06-09 16:51:14,844 parso.python.diff DEBUG parse_part from 1 to 3 (to 2 in part parser)
+ 2023-06-09 16:51:14,844 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:51:17,875 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:51:17,875 parso.python.diff DEBUG line_lengths old: 3; new: 3
+ 2023-06-09 16:51:17,875 parso.python.diff DEBUG -> code[equal] old[1:2] new[1:2]
+ 2023-06-09 16:51:17,876 parso.python.diff DEBUG parse_part from 1 to 3 (to 2 in part parser)
+ 2023-06-09 16:51:17,876 parso.python.diff DEBUG -> code[replace] old[3:3] new[3:3]
+ 2023-06-09 16:51:17,876 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:51:32,731 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:51:32,731 parso.python.diff DEBUG line_lengths old: 3; new: 4
+ 2023-06-09 16:51:32,731 parso.python.diff DEBUG -> code[equal] old[1:2] new[1:2]
+ 2023-06-09 16:51:32,732 parso.python.diff DEBUG parse_part from 1 to 4 (to 3 in part parser)
+ 2023-06-09 16:51:32,733 parso.python.diff DEBUG -> code[replace] old[3:3] new[3:4]
+ 2023-06-09 16:51:32,733 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:51:55,970 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:51:55,971 parso.python.diff DEBUG line_lengths old: 4; new: 7
+ 2023-06-09 16:51:55,972 parso.python.diff DEBUG -> code[equal] old[1:3] new[1:3]
+ 2023-06-09 16:51:55,976 parso.python.diff DEBUG parse_part from 1 to 7 (to 6 in part parser)
+ 2023-06-09 16:51:55,976 parso.python.diff DEBUG -> code[replace] old[4:4] new[4:7]
+ 2023-06-09 16:51:55,976 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:52:15,955 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:52:15,955 parso.python.diff DEBUG line_lengths old: 7; new: 9
+ 2023-06-09 16:52:15,955 parso.python.diff DEBUG -> code[equal] old[1:6] new[1:6]
+ 2023-06-09 16:52:15,957 parso.python.diff DEBUG parse_part from 1 to 9 (to 8 in part parser)
+ 2023-06-09 16:52:15,957 parso.python.diff DEBUG -> code[insert] old[7:6] new[7:8]
+ 2023-06-09 16:52:15,957 parso.python.diff DEBUG -> code[equal] old[7:7] new[9:9]
+ 2023-06-09 16:52:15,957 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:52:17,866 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:52:17,866 parso.python.diff DEBUG line_lengths old: 9; new: 9
+ 2023-06-09 16:52:17,866 parso.python.diff DEBUG -> code[equal] old[1:8] new[1:8]
+ 2023-06-09 16:52:17,867 parso.python.diff DEBUG parse_part from 1 to 9 (to 8 in part parser)
+ 2023-06-09 16:52:17,867 parso.python.diff DEBUG -> code[replace] old[9:9] new[9:9]
+ 2023-06-09 16:52:17,867 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:52:26,756 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:52:26,757 parso.python.diff DEBUG line_lengths old: 9; new: 11
+ 2023-06-09 16:52:26,757 parso.python.diff DEBUG -> code[equal] old[1:8] new[1:8]
+ 2023-06-09 16:52:26,759 parso.python.diff DEBUG parse_part from 1 to 11 (to 10 in part parser)
+ 2023-06-09 16:52:26,759 parso.python.diff DEBUG -> code[replace] old[9:9] new[9:11]
+ 2023-06-09 16:52:26,759 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:52:29,973 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:52:29,974 parso.python.diff DEBUG line_lengths old: 11; new: 11
+ 2023-06-09 16:52:29,974 parso.python.diff DEBUG -> code[equal] old[1:10] new[1:10]
+ 2023-06-09 16:52:29,975 parso.python.diff DEBUG parse_part from 1 to 11 (to 10 in part parser)
+ 2023-06-09 16:52:29,975 parso.python.diff DEBUG -> code[replace] old[11:11] new[11:11]
+ 2023-06-09 16:52:29,975 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:52:59,626 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:52:59,627 parso.python.diff DEBUG line_lengths old: 11; new: 13
+ 2023-06-09 16:52:59,627 parso.python.diff DEBUG -> code[equal] old[1:10] new[1:10]
+ 2023-06-09 16:52:59,628 parso.python.diff DEBUG parse_part from 1 to 13 (to 12 in part parser)
+ 2023-06-09 16:52:59,628 parso.python.diff DEBUG -> code[replace] old[11:11] new[11:13]
+ 2023-06-09 16:52:59,628 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:53:02,662 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:53:02,662 parso.python.diff DEBUG line_lengths old: 13; new: 13
+ 2023-06-09 16:53:02,662 parso.python.diff DEBUG -> code[equal] old[1:12] new[1:12]
+ 2023-06-09 16:53:02,664 parso.python.diff DEBUG parse_part from 1 to 13 (to 12 in part parser)
+ 2023-06-09 16:53:02,664 parso.python.diff DEBUG -> code[replace] old[13:13] new[13:13]
+ 2023-06-09 16:53:02,664 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:53:10,255 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:53:10,256 parso.python.diff DEBUG line_lengths old: 13; new: 15
+ 2023-06-09 16:53:10,256 parso.python.diff DEBUG -> code[equal] old[1:12] new[1:12]
+ 2023-06-09 16:53:10,258 parso.python.diff DEBUG parse_part from 1 to 15 (to 14 in part parser)
+ 2023-06-09 16:53:10,258 parso.python.diff DEBUG -> code[replace] old[13:13] new[13:15]
+ 2023-06-09 16:53:10,258 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:53:12,296 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:53:12,296 parso.python.diff DEBUG line_lengths old: 15; new: 15
+ 2023-06-09 16:53:12,296 parso.python.diff DEBUG -> code[equal] old[1:14] new[1:14]
+ 2023-06-09 16:53:12,297 parso.python.diff DEBUG parse_part from 1 to 15 (to 14 in part parser)
+ 2023-06-09 16:53:12,298 parso.python.diff DEBUG -> code[replace] old[15:15] new[15:15]
+ 2023-06-09 16:53:12,298 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:53:39,784 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:53:39,785 parso.python.diff DEBUG line_lengths old: 15; new: 1
+ 2023-06-09 16:53:39,785 parso.python.diff DEBUG -> code[replace] old[1:15] new[1:1]
+ 2023-06-09 16:53:39,785 parso.python.diff DEBUG parse_part from 1 to 1 (to 0 in part parser)
+ 2023-06-09 16:53:39,785 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:53:42,046 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:53:42,046 parso.python.diff DEBUG line_lengths old: 1; new: 1
+ 2023-06-09 16:53:42,046 parso.python.diff DEBUG -> code[replace] old[1:1] new[1:1]
+ 2023-06-09 16:53:42,046 parso.python.diff DEBUG parse_part from 1 to 1 (to 0 in part parser)
+ 2023-06-09 16:53:42,047 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:54:20,401 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:54:20,402 parso.python.diff DEBUG line_lengths old: 1; new: 3
+ 2023-06-09 16:54:20,402 parso.python.diff DEBUG -> code[replace] old[1:1] new[1:3]
+ 2023-06-09 16:54:20,402 parso.python.diff DEBUG parse_part from 1 to 3 (to 2 in part parser)
+ 2023-06-09 16:54:20,402 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:55:06,949 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:55:06,951 parso.python.diff DEBUG line_lengths old: 3; new: 5
+ 2023-06-09 16:55:06,951 parso.python.diff DEBUG -> code[equal] old[1:2] new[1:2]
+ 2023-06-09 16:55:06,952 parso.python.diff DEBUG copy old[1:1] new[1:1]
+ 2023-06-09 16:55:06,954 parso.python.diff DEBUG parse_part from 2 to 5 (to 4 in part parser)
+ 2023-06-09 16:55:06,955 parso.python.diff DEBUG -> code[replace] old[3:3] new[3:5]
+ 2023-06-09 16:55:06,955 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:55:51,260 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:55:51,260 parso.python.diff DEBUG line_lengths old: 5; new: 5
+ 2023-06-09 16:55:51,260 parso.python.diff DEBUG -> code[equal] old[1:4] new[1:4]
+ 2023-06-09 16:55:51,261 parso.python.diff DEBUG copy old[1:1] new[1:1]
+ 2023-06-09 16:55:51,261 parso.python.diff DEBUG parse_part from 2 to 5 (to 4 in part parser)
+ 2023-06-09 16:55:51,261 parso.python.diff DEBUG -> code[replace] old[5:5] new[5:5]
+ 2023-06-09 16:55:51,262 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:55:51,281 parso.cache DEBUG pickle loaded: C:\Users\DELL\anaconda3\lib\typing.py
+ 2023-06-09 16:55:51,291 parso.cache DEBUG pickle loaded: C:\Users\DELL\anaconda3\lib\site-packages\jedi\third_party\typeshed\stdlib\3\typing.pyi
+ 2023-06-09 16:56:40,763 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:56:40,763 parso.python.diff DEBUG line_lengths old: 5; new: 14
+ 2023-06-09 16:56:40,763 parso.python.diff DEBUG -> code[equal] old[1:4] new[1:4]
+ 2023-06-09 16:56:40,763 parso.python.diff DEBUG copy old[1:1] new[1:1]
+ 2023-06-09 16:56:40,765 parso.python.diff DEBUG parse_part from 2 to 14 (to 13 in part parser)
+ 2023-06-09 16:56:40,765 parso.python.diff DEBUG -> code[replace] old[5:5] new[5:14]
+ 2023-06-09 16:56:40,765 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:57:24,860 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:57:24,860 parso.python.diff DEBUG line_lengths old: 14; new: 10
+ 2023-06-09 16:57:24,860 parso.python.diff DEBUG -> code[equal] old[1:7] new[1:7]
+ 2023-06-09 16:57:24,860 parso.python.diff DEBUG copy old[1:1] new[1:1]
+ 2023-06-09 16:57:24,862 parso.python.diff DEBUG parse_part from 2 to 10 (to 9 in part parser)
+ 2023-06-09 16:57:24,862 parso.python.diff DEBUG -> code[insert] old[8:7] new[8:8]
+ 2023-06-09 16:57:24,862 parso.python.diff DEBUG -> code[equal] old[8:8] new[9:9]
+ 2023-06-09 16:57:24,862 parso.python.diff DEBUG -> code[replace] old[9:14] new[10:10]
+ 2023-06-09 16:57:24,862 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:58:05,129 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:58:05,129 parso.python.diff DEBUG line_lengths old: 10; new: 19
+ 2023-06-09 16:58:05,129 parso.python.diff DEBUG -> code[equal] old[1:9] new[1:9]
+ 2023-06-09 16:58:05,129 parso.python.diff DEBUG copy old[1:1] new[1:1]
+ 2023-06-09 16:58:05,132 parso.python.diff DEBUG parse_part from 2 to 19 (to 18 in part parser)
+ 2023-06-09 16:58:05,132 parso.python.diff DEBUG -> code[replace] old[10:10] new[10:19]
+ 2023-06-09 16:58:05,132 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:58:16,363 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:58:16,363 parso.python.diff DEBUG line_lengths old: 19; new: 22
+ 2023-06-09 16:58:16,364 parso.python.diff DEBUG -> code[equal] old[1:18] new[1:18]
+ 2023-06-09 16:58:16,364 parso.python.diff DEBUG copy old[1:1] new[1:1]
+ 2023-06-09 16:58:16,367 parso.python.diff DEBUG parse_part from 2 to 22 (to 21 in part parser)
+ 2023-06-09 16:58:16,367 parso.python.diff DEBUG -> code[replace] old[19:19] new[19:22]
+ 2023-06-09 16:58:16,367 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:58:29,121 root INFO loop initiating
+ 2023-06-09 16:58:29,122 root INFO checking for int , string , float in loop 1
+ 2023-06-09 16:58:29,122 root INFO added 1 in [1]
+ 2023-06-09 16:58:29,122 root INFO checking for int , string , float in loop 2
+ 2023-06-09 16:58:29,122 root INFO added 2 in [1, 2]
+ 2023-06-09 16:58:29,122 root INFO checking for int , string , float in loop 3
+ 2023-06-09 16:58:29,122 root INFO added 3 in [1, 2, 3]
+ 2023-06-09 16:58:29,122 root INFO checking for int , string , float in loop 4
+ 2023-06-09 16:58:29,122 root INFO added 4 in [1, 2, 3, 4]
+ 2023-06-09 16:58:29,122 root INFO checking for int , string , float in loop [4, 5, 6]
+ 2023-06-09 16:58:29,122 root INFO Looping in a list
+ 2023-06-09 16:58:29,122 root INFO inside list element [4, 5, 6]
+ 2023-06-09 16:58:29,122 root INFO added 4 in [1, 2, 3, 4, 4]
+ 2023-06-09 16:58:29,122 root INFO inside list element [4, 5, 6]
+ 2023-06-09 16:58:29,122 root INFO added 5 in [1, 2, 3, 4, 4, 5]
+ 2023-06-09 16:58:29,122 root INFO inside list element [4, 5, 6]
+ 2023-06-09 16:58:29,122 root INFO added 6 in [1, 2, 3, 4, 4, 5, 6]
+ 2023-06-09 16:58:29,122 root INFO checking for int , string , float in loop vcd
+ 2023-06-09 16:58:29,122 root INFO added vcd in []
+ 2023-06-09 16:58:29,122 root INFO checking for int , string , float in loop 21.15
+ 2023-06-09 16:58:29,122 root INFO added 21.15 in [21.15]
+ 2023-06-09 16:58:29,122 root INFO checking for int , string , float in loop cmd
+ 2023-06-09 16:58:29,123 root INFO added cmd in [21.15]
+ 2023-06-09 16:58:32,309 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:58:32,309 parso.python.diff DEBUG line_lengths old: 22; new: 1
+ 2023-06-09 16:58:32,309 parso.python.diff DEBUG -> code[replace] old[1:22] new[1:1]
+ 2023-06-09 16:58:32,309 parso.python.diff DEBUG parse_part from 1 to 1 (to 0 in part parser)
+ 2023-06-09 16:58:32,309 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:59:03,415 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:59:03,416 parso.python.diff DEBUG line_lengths old: 1; new: 1
+ 2023-06-09 16:59:03,418 parso.python.diff DEBUG -> code[replace] old[1:1] new[1:1]
+ 2023-06-09 16:59:03,419 parso.python.diff DEBUG parse_part from 1 to 1 (to 0 in part parser)
+ 2023-06-09 16:59:03,419 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:59:06,168 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:59:06,169 parso.python.diff DEBUG line_lengths old: 1; new: 1
+ 2023-06-09 16:59:06,170 parso.python.diff DEBUG -> code[replace] old[1:1] new[1:1]
+ 2023-06-09 16:59:06,172 parso.python.diff DEBUG parse_part from 1 to 1 (to 0 in part parser)
+ 2023-06-09 16:59:06,173 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:59:23,776 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:59:23,777 parso.python.diff DEBUG line_lengths old: 1; new: 2
+ 2023-06-09 16:59:23,778 parso.python.diff DEBUG -> code[replace] old[1:1] new[1:2]
+ 2023-06-09 16:59:23,781 parso.python.diff DEBUG parse_part from 1 to 2 (to 1 in part parser)
+ 2023-06-09 16:59:23,781 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:59:27,148 parso.python.diff DEBUG diff parser start
+ 2023-06-09 16:59:27,148 parso.python.diff DEBUG line_lengths old: 2; new: 3
+ 2023-06-09 16:59:27,149 parso.python.diff DEBUG -> code[equal] old[1:1] new[1:1]
+ 2023-06-09 16:59:27,149 parso.python.diff DEBUG copy old[1:1] new[1:1]
+ 2023-06-09 16:59:27,149 parso.python.diff DEBUG -> code[replace] old[2:2] new[2:3]
+ 2023-06-09 16:59:27,149 parso.python.diff DEBUG parse_part from 2 to 3 (to 2 in part parser)
+ 2023-06-09 16:59:27,149 parso.python.diff DEBUG diff parser end
+ 2023-06-09 16:59:28,742 root INFO FINAL INTEGER LIST : [1, 2, 3, 4, 4, 5, 6]
+ 2023-06-09 16:59:28,742 root INFO FINAL FLOAT LIST : [21.15]
+ 2023-06-09 16:59:28,744 root INFO FINAL STRING LIST : ['vcd', 'cmd']
