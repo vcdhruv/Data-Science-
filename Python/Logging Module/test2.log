@@ -1,0 +1,9 @@
+ 2024-08-03 14:16:04,592 root INFO this is my info msg
+ 2024-08-03 14:16:04,592 root ERROR this is my error msg
+ 2024-08-03 14:16:04,592 root CRITICAL this is my critical
+ 2024-08-03 14:25:10,540 root INFO this is my info msg
+ 2024-08-03 14:25:10,540 root ERROR this is my error msg
+ 2024-08-03 14:25:10,541 root CRITICAL this is my critical
+ 2024-08-03 14:25:12,209 root INFO this is my info msg
+ 2024-08-03 14:25:12,209 root ERROR this is my error msg
+ 2024-08-03 14:25:12,209 root CRITICAL this is my critical
