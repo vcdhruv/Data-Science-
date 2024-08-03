@@ -1,0 +1,103 @@
+Series:
+    series is one dimentional array like objects.
+    data = [1,2,3,4,5]
+    series = pd.Series(data)
+    print("Series \n",series)
+    this will give output as :
+    Series
+    0   1
+    1   2
+    2   3
+    3   4
+    4   5
+    dtype: int64
+
+Series From Dictionary:
+    data = {'a':1,'b':2,'c':3}
+    series = pd.Series(data)
+    print("Series \n",series)
+    this will give output as :
+    a   1
+    b   2
+    c   3
+    dtype: int64
+
+Create Index Manual:
+    data = [10,20,30]
+    index = ['a','b','c']
+    pd.Series(data,index=index)
+    a    10
+    b    20
+    c    30
+    dtype: int64
+
+Dataframe:
+    dataframe can multiple number of rows and columns.
+
+Dataframe from Dictionary:
+    data={
+        'Name':['Krish','vishmay','noone'],
+        'Age':[25,20,189],
+        'City':['Rajkot','Banglore','Florida']
+    }
+    df = pd.DataFrame(data)
+
+Dataframe from List Of Dictionaries:
+    data = [
+        {'Name':'vcd','Age':32,'City':'Rajkot'},
+        {'Name':'mcd','Age':32,'City':'Rajkot'},
+        {'Name':'cmd','Age':32,'City':'Rajkot'}
+    ]
+    df = pd.DataFrame(data)
+    df
+
+To read csv file:
+    df = pd.read_csv('sales_data.csv')
+    df
+    To read top 5 rows :
+        df.head(5)
+    TO read last 5 records : 
+        df.tail(5)
+    
+If we want to access row index : 
+    df.loc[0]
+
+If we want to access with index location :
+    df.iloc[0]
+
+If we want to access with key :
+    data={
+        'Name':['Krish','vishmay','noone'],
+        'Age':[25,20,189],
+        'City':['Rajkot','Banglore','Florida']
+    }
+    df = pd.DataFrame(data)
+
+    df['name'] gives all names
+    type(df['name']) gives series
+
+If we want to access using at :
+    df.at[1,'Age'] gives 20
+
+If we want to access using iat :
+    df.iat[2,2] gives 'Florida'
+
+Adding a new column to df :
+    df['salary'] = [50000,30000,20000]
+
+Remove a column :
+    df.drop(df['salary'],axis = 1,inplace=True) here axis = 1 means verical by default axis = 0
+
+To add 1 to age :
+    df['Age'] = af['Age'] + 1
+
+TO remove row : 
+    df.drop(0,inplace=True)
+
+To get statistical summary : 
+    df.describe()
+
+To get datatypes :
+    df.dtypes
+
+    
