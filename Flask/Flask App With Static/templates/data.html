@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>ABC Corporation</title>
+    <style>
+        table{
+            border: collapse;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px solid black">
+        
+        <tr>
+            {% for key in data.keys() %}
+            <td>{{ key }}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for value in data.values() %}
+            <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+    </table>
+</body>
+</html>
