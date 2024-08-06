@@ -3,4 +3,3 @@ ipykernel
 flask
 requests
 pymongo
-logging

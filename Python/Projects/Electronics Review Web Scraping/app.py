@@ -1,8 +1,11 @@
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
 from flask import Flask , render_template , redirect , url_for , request
 import requests
 from bs4 import BeautifulSoup
 import logging
 import time
+import os
 
 app = Flask(__name__)
 logging.basicConfig(
@@ -14,6 +17,30 @@ logging.basicConfig(
 site_url = "https://www.flipkart.com"
 base_url = "https://www.flipkart.com/search?q="
 
+uri = "mongodb+srv://vcdhruv:vcd7777777@cluster0.rkvcxnp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+# Create a new client and connect to the server
+client = MongoClient(uri, server_api=ServerApi('1'))
+
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    logging.error(f"Mongo DB Exception occurred : {e}")
+
+db = client['flipkart_review_scrap']
+review_scrap_coll = db["scrap record"]
+
+def fetch_with_retry(url):
+    while True:
+        response = requests.get(url)
+        if response.status_code == 429:
+            retry_after = int(response.headers.get("Retry-After", 1))
+            logging.warning(f"Rate limited. Retrying after {retry_after} seconds.")
+            time.sleep(retry_after)
+        else:
+            return response
 
 @app.route('/',methods=['GET'])
 def index_page():
@@ -24,12 +51,13 @@ def review():
     if request.method == 'POST':
         try:
             f = None
-            search_string = request.form["search"].replace(" ","")
+            user_searched = request.form["search"]
+            search_string = user_searched.replace(" ","")
             logging.info(f"User searched {search_string}")
 
             main_url = base_url + search_string
-            main_url_res = requests.get(main_url)
-            logging.info(f"Response of {main_url} is {main_url_res}")
+            main_url_res = fetch_with_retry(main_url)
+            # logging.info(f"Response of {main_url} is {main_url_res}")
 
             if main_url_res.status_code != 200:
                 logging.error(f"Failed to fetch main url : {main_url}")
@@ -39,16 +67,16 @@ def review():
             soup.find_all("div",{"class":"cPHDOP col-12-12"})
 
             bigbox = soup.find_all("div",{"class":"cPHDOP col-12-12"})
-            if len(bigbox) <= 3:
+            if len(bigbox) < 3:
                 logging.error("Not enough records found on the search page.")
                 return "Error: Not enough products found",404
             
-            del bigbox[0:3]
+            del bigbox[0:2]
             go_to_particular_page_links = []
             for i in bigbox:
                 try:
                     page_link = i.div.div.div.a["href"]
-                    logging.info(f"page links : {page_link}")
+                    logging.info(f"product link  : {site_url + page_link}")
                     go_to_particular_page_links.append(site_url + page_link)
                 except Exception as e:
                     logging.warning(f"Could not find href in bigbox : {e}")
@@ -57,25 +85,25 @@ def review():
                 logging.error("No product links found")
                 return "<h1>Not Enough Reviews</h1>"
             
-            mobile_1 = go_to_particular_page_links[0]
-            try:
-                time.sleep(5)
-                mobile_response = requests.get(mobile_1)
-            except Exception as e:
-                logging.error(e)
-            mobile_response.encoding = "utf-8"
-            # if mobile_response.status_code != 200:
-            #     logging.error(f"Failed to fetch product page : {mobile_1}")
-            #     return "Error : Failed to fetch product page",500
-
-
+            product_link = go_to_particular_page_links[0]
+            product_link_res = fetch_with_retry(product_link)
+            # logging.info(f"Response of {product_link} is {product_link_res}")
+            if product_link_res.status_code != 200:
+                logging.error(f"Failed to fetch product page : {product_link}")
+                return "Error : Failed to fetch product page",500
             
-            mobile_soup = BeautifulSoup(mobile_response.text,"html.parser")
+                        
+            mobile_soup = BeautifulSoup(product_link_res.text,"html.parser")
 
             reviews_list = mobile_soup.find_all("div",{"class":"col EPCmJX"})
-            logging.info(f"review list : {reviews_list}")
+            # reviews_list = mobile_soup.find_all(lambda tag: tag.name == 'div' and tag.get('class') and any('EPCmJX' in c for c in tag['class']))
+            logging.info(f"review list length : {len(reviews_list)}")
+            # logging.info(f"review list 2 : {rl}")
+
             try:
-                f = open(f"{search_string}.csv","w",encoding="utf-8")
+                if not os.path.exists('CSV_Files'):
+                    os.mkdir('CSV_Files')    
+                f = open(f"CSV_Files/{user_searched}.csv","w",encoding="utf-8")
                 f.write("Name,Ratings,Comment,Descriptions\n")
             except Exception as e:
                 logging.error(e)
@@ -115,8 +143,17 @@ def review():
                 
                 logging.info(f"Appending to result : {review}")
                 final_reviews_list.append(review)
-                
+
             logging.info(f"Final Review List To Be Added : {final_reviews_list}")
+            
+            try:
+                logging.info("Trying to add data to mongo db.")
+                review_scrap_coll.insert_many(final_reviews_list)
+            except Exception as e:
+                logging.error(f"Error Occured While INserting data to mongo db : {e}")
+            else:
+                logging.info("Data Successfully added to Mongo DB")
+                
             return render_template('results.html',results = final_reviews_list)
         except Exception as e:
             logging.error(e)
