@@ -138,14 +138,18 @@ def review():
                 except:
                     logging.warning("Description not found")
                 
-                logging.info("exporing data to csv file locally")
-                f.write(','.join(f'"{value.replace("\"", "\"\"")}"' for value in review.values()) + '\n')  # Properly format CSV row
-                
                 logging.info(f"Appending to result : {review}")
                 final_reviews_list.append(review)
 
             logging.info(f"Final Review List To Be Added : {final_reviews_list}")
             
+            logging.info("exporing data to csv file locally")
+            for i in final_reviews_list:
+                f.write(i["Name"]+",")
+                f.write(i["Ratings"]+",")
+                f.write(i["Comment"]+",")
+                f.write(i["Description"]+"\n")
+
             try:
                 logging.info("Trying to add data to mongo db.")
                 review_scrap_coll.insert_many(final_reviews_list)
