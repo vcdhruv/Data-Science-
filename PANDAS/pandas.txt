@@ -182,3 +182,46 @@ def cat_fare(x):
     else:
         return "high"
 df1["Catergories_fare"] = df1['Fare'].apply(cat_fare)
+df1.reindex(['b','c','d','a']) to reindex data
+for i in df1.iterrows(): this will create generator object and will print first index then values of first row and so on. 
+    print(i)  
+
+df2 = df1[['a','b']]
+df2.map(lambda x : x**2) this is used on entire dataframe while apply() is used on entire column
+df1.sort_values("c") for sorting based on values
+df1.sort_index() for sorting based on index
+pd.set_option("display.max_colwidth",500) see its example in advance_pandas_3.ipynb
+see window function in advance_pandas_3.ipynb
+df3['a'].cumsum() for cummulative sum
+pd.date_range(start="2023-04-23",end="2023-06-23") will generate dates in the given range
+df6['updated_date'] = pd.to_datetime(df6['date']) to convert string to datetime
+df6['year'] = df6['updated_date'].dt.year to get the year from the date which is in datetime format not in object format
+df6['day'] = df6['updated_date'].dt.day for day
+df6['month'] = df6['updated_date'].dt.month for month
+pd.Timedelta(days=1,hours=5,minutes=45) it gives this Timedelta('1 days 05:45:00')
+
+date = pd.to_datetime('2023-06-20')
+td = pd.Timedelta(days=1)
+date + td
+all 3 lines output : Timestamp('2023-06-21 00:00:00')
+
+data = ["a","b","c","d","e","f","a","b","f","e"]
+pd.Categorical(data)
+['a', 'b', 'c', 'd', 'e', 'f', 'a', 'b', 'f', 'e']
+Categories (6, object): ['a', 'b', 'c', 'd', 'e', 'f'] it gives unique data from datasets
+
+cat = pd.Categorical(data)
+cat.value_counts()
+a    2
+b    2
+c    1
+d    1
+e    2
+f    2
+Name: count, dtype: int64
+
+data visualization:
+
+import matplotlib
+d = pd.Series([1,2,3,3,5,6,6,8])
+d.plot()
