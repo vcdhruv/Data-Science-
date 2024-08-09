@@ -227,3 +227,11 @@ data visualization:
 import matplotlib
 d = pd.Series([1,2,3,3,5,6,6,8])
 d.plot()
+
+
+df.rename(columns={'Date':'Sales Date'}) to rename column
+df['value_new'] = df['Value'].astype(int) to change data type 
+multiple_grouped = df.groupby('Region')['Value'].agg(['mean','sum','count']) aggregate multiple functions
+df.to_json() will convert dataframe to json.
+df.to_json(orient='index')
+df.to_json(orien='records')
