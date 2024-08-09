@@ -235,3 +235,5 @@ multiple_grouped = df.groupby('Region')['Value'].agg(['mean','sum','count']) agg
 df.to_json() will convert dataframe to json.
 df.to_json(orient='index')
 df.to_json(orien='records')
+df_excel.to_pickel('df_excel') to save pickle file which will not be able to open
+pd.read_pickel()
