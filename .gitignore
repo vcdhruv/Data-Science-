@@ -3,3 +3,5 @@ requirement.txt
 notes.txt
 MySQL_concepts/__pycache__/
 MySQL_concepts/mysql_configuration.py
+Books
+*.txt
